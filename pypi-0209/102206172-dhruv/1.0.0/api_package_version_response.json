@@ -1,0 +1,111 @@
+{
+    "info": {
+        "author": "Dhruv",
+        "author_email": "dsanmotra_be22@thapar.edu.com",
+        "bugtrack_url": null,
+        "classifiers": [
+            "License :: OSI Approved :: MIT License",
+            "Operating System :: OS Independent",
+            "Programming Language :: Python :: 3"
+        ],
+        "description": "# TOPSIS Implementation\n\n## Overview\n\nTOPSIS (Technique for Order Preference by Similarity to Ideal Solution) is a multi-criteria decision-making method. This Python package implements the TOPSIS method, allowing you to rank alternatives based on multiple criteria.\n\nThis implementation is specifically designed to work with a CSV input file and provides results with TOPSIS scores and ranks.\n\n## Features\n\n- Handles multi-criteria decision-making problems\n- Accepts CSV input files\n- Outputs a CSV file with TOPSIS scores and ranks\n- Validates input data and handles common errors\n- Command-line interface for ease of use\n\n## Installation\n\nYou can install this package directly from PyPI using pip:\n\n```bash\npip install 102206172_DHRUV\n```\n\n## Usage\n\n### Command-Line Interface\n\nAfter installing the package, you can use it from the command line. The basic usage is:\n\n```bash\ntopsis <InputDataFile> <Weights> <Impacts> <ResultFileName>\n```\n\n### Parameters\n\n- **InputDataFile**: The path to the input CSV file containing the data.\n- **Weights**: A string of comma-separated numerical weights (e.g., `\"1,1,1,2\"`).\n- **Impacts**: A string of comma-separated `+` or `-` signs indicating whether each criterion is beneficial (`+`) or non-beneficial (`-`) (e.g., `\"+,+,-,+\"`).\n- **ResultFileName**: The path to the output CSV file where results will be saved.\n\n### Example\n\nSuppose you have an input file named `102206172_data.csv` with the following content:\n\n```csv\nAlternative,Criterion1,Criterion2,Criterion3,Criterion4\nM1,250,16,12,5\nM2,200,6,8,3\nM3,300,16,8,4\nM4,275,10,10,4\n```\n\nYou can run the following command:\n\n```bash\ntopsis 102206172-data.csv \"1,1,1,2,\" \"+,+,-,+,\" 102206172-result.csv\n```\n\nThis will generate a file `102206172-result.csv` containing the input data along with two additional columns for the TOPSIS score and the rank:\n\n```csv\nAlternative,Criterion1,Criterion2,Criterion3,Criterion4,TOPSIS Score,Rank\nM1,250,16,12,5,0.556,2\nM2,200,6,8,3,0.222,4\nM3,300,16,8,4,0.778,1\nM4,275,10,10,4,0.444,3\n```\n\n### Error Handling\n\nThe program includes several checks to handle common errors:\n\n1. **File Not Found**: If the input file is not found, an appropriate error message will be displayed.\n2. **Invalid Number of Parameters**: The program checks if the correct number of parameters is provided.\n3. **Invalid Data**: The input file must contain at least three columns, with the first column being the name of alternatives, and the rest must contain numeric values.\n4. **Weights and Impacts Validation**: The number of weights and impacts must match the number of criteria in the input file. Impacts must be either `+` or `-`.\n\n## Examples\n\nHere are a few examples to demonstrate how the package can be used:\n\n### Example 1: Basic Usage\n\n```bash\ntopsis data.csv \"1,1,1,1\" \"+,+,+,+\" result.csv\n```\n\n### Example 2: Different Weights and Impacts\n\n```bash\ntopsis data.csv \"0.5,1,1.5,2\" \"+,-,+,-\" result.csv\n```\n\n### Example 3: Handling Errors\n\nIf the number of weights or impacts does not match the number of criteria:\n\n```bash\ntopsis data.csv \"1,1,1\" \"+,+\" result.csv\n```\n\nThis will result in an error message indicating the mismatch.\n\n## Testing\n\nTo ensure everything works correctly, you can run some tests. If you haven't already, you can clone the repository and run the tests locally.\n\n```bash\n# Clone the repository\ngit clone https://github.com/Dhruvrstar/TOPSIS.git\n\n# Navigate to the project directory\ncd 102206172_DHRUV\n\n# Install the required dependencies\npip install -r requirements.txt\n\n# Run the tests (assuming you've created test scripts)\npython -m unittest discover tests\n```\n\n## Development\n\nIf you'd like to contribute to this project, follow these steps:\n\n1. Fork the repository on GitHub.\n2. Clone your fork to your local machine.\n3. Create a new branch for your feature or bugfix.\n4. Make your changes and commit them with descriptive messages.\n5. Push your changes to your fork.\n6. Submit a pull request to the original repository.\n\n## License\n\nThis project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.\n\n## Contact\n\nIf you have any questions, suggestions, or issues, feel free to contact me at `dhruvofff@gmail.com`.\n\n## Acknowledgments\n\n- Thanks to [Name or Organization] for their support.\n- Inspired by the original TOPSIS method developed by C.L. Hwang and K. Yoon.\n```\n\n### **Instructions for Customization:**\n\n1. **PyPI Badge:** If you want to include the PyPI version badge, replace `102206172_DHRUV` in the badge URL with your actual package name.\n  \n2. **Example Commands:** Ensure that the commands and examples match your actual package usage. Replace the placeholder values with real ones.\n\n3. **Contact Information:** Replace `your.email@example.com` with your actual contact email.\n\n4. **Repository URL:** Update any URLs to point to your actual GitHub repository.\n\n5. **Acknowledgments:** Customize the Acknowledgments section with any relevant names or organizations you wish to credit.\n\nBy following these steps and customizing the provided template, you'll have a thorough and professional `README.md` file ready for your project!\n",
+        "description_content_type": "text/markdown",
+        "docs_url": null,
+        "download_url": null,
+        "downloads": {
+            "last_day": -1,
+            "last_month": -1,
+            "last_week": -1
+        },
+        "dynamic": [
+            "Author",
+            "Author-Email",
+            "Classifier",
+            "Description",
+            "Description-Content-Type",
+            "Home-Page",
+            "Requires-Dist",
+            "Requires-Python",
+            "Summary"
+        ],
+        "home_page": "https://github.com/Dhruvrstar/TOPSIS",
+        "keywords": null,
+        "license": null,
+        "license_expression": null,
+        "license_files": null,
+        "maintainer": null,
+        "maintainer_email": null,
+        "name": "102206172-DHRUV",
+        "package_url": "https://pypi.org/project/102206172-DHRUV/",
+        "platform": null,
+        "project_url": "https://pypi.org/project/102206172-DHRUV/",
+        "project_urls": {
+            "Homepage": "https://github.com/Dhruvrstar/TOPSIS"
+        },
+        "provides_extra": null,
+        "release_url": "https://pypi.org/project/102206172-DHRUV/1.0.0/",
+        "requires_dist": [
+            "pandasnumpy"
+        ],
+        "requires_python": ">=3.6",
+        "summary": "A Python implementation of the TOPSIS method for multi-criteria decision making",
+        "version": "1.0.0",
+        "yanked": false,
+        "yanked_reason": null
+    },
+    "last_serial": 27018454,
+    "ownership": {
+        "organization": null,
+        "roles": [
+            {
+                "role": "Owner",
+                "user": "Blackspade"
+            }
+        ]
+    },
+    "urls": [
+        {
+            "comment_text": "",
+            "digests": {
+                "blake2b_256": "ea0f434e4bc2ae55718f222c51f448b29721de443b3fe7f2e92ecb4871176ae7",
+                "md5": "65babd0968c529e9058f3f2b8a782005",
+                "sha256": "0a685667845d4b0b0bdd743f40009a321e3854c7b7bbc2b88df7673b26d34f60"
+            },
+            "downloads": -1,
+            "filename": "102206172_DHRUV-1.0.0-py3-none-any.whl",
+            "has_sig": false,
+            "md5_digest": "65babd0968c529e9058f3f2b8a782005",
+            "packagetype": "bdist_wheel",
+            "python_version": "py3",
+            "requires_python": ">=3.6",
+            "size": 4536,
+            "upload_time": "2025-01-18T23:10:36",
+            "upload_time_iso_8601": "2025-01-18T23:10:36.592075Z",
+            "url": "https://files.pythonhosted.org/packages/ea/0f/434e4bc2ae55718f222c51f448b29721de443b3fe7f2e92ecb4871176ae7/102206172_DHRUV-1.0.0-py3-none-any.whl",
+            "yanked": false,
+            "yanked_reason": null
+        },
+        {
+            "comment_text": "",
+            "digests": {
+                "blake2b_256": "037a46ecd9fda7b80da283fa32c3dd741740415aef140bb2230c70a8de542510",
+                "md5": "b7c5467ade12af65758ec7bab8eb15fa",
+                "sha256": "7fced69351f076ff13ccfa7b9b2ae56a55938b76c6fe4b02faf3f1f843d3005a"
+            },
+            "downloads": -1,
+            "filename": "102206172_dhruv-1.0.0.tar.gz",
+            "has_sig": false,
+            "md5_digest": "b7c5467ade12af65758ec7bab8eb15fa",
+            "packagetype": "sdist",
+            "python_version": "source",
+            "requires_python": ">=3.6",
+            "size": 4416,
+            "upload_time": "2025-01-18T23:10:38",
+            "upload_time_iso_8601": "2025-01-18T23:10:38.427757Z",
+            "url": "https://files.pythonhosted.org/packages/03/7a/46ecd9fda7b80da283fa32c3dd741740415aef140bb2230c70a8de542510/102206172_dhruv-1.0.0.tar.gz",
+            "yanked": false,
+            "yanked_reason": null
+        }
+    ],
+    "vulnerabilities": []
+}

@@ -1,0 +1,101 @@
+{
+    "info": {
+        "author": "Your Name",
+        "author_email": "your_email@example.com",
+        "bugtrack_url": null,
+        "classifiers": [
+            "License :: OSI Approved :: MIT License",
+            "Operating System :: OS Independent",
+            "Programming Language :: Python :: 3"
+        ],
+        "description": "\n# TOPSIS Package\n\n\n\n## Overview\n\nThe *TOPSIS (Technique for Order Preference by Similarity to Ideal Solution)* method is a multi-criteria decision analysis (MCDA) technique used to evaluate and rank alternatives based on multiple criteria. This Python package provides a simple implementation of the TOPSIS method.\n\n## Features\n\n- Easy to use function to perform the TOPSIS method on decision matrices.\n- Accepts customizable weights for each criterion.\n- Supports both beneficial and non-beneficial criteria (impacts).\n- Returns preference scores and ranks for the alternatives.\n\n    Parameters:\n        data (list of lists): Decision matrix (alternatives x criteria).\n        weights (list): List of weights for each criterion.\n        impacts (list): '+' for beneficial, '-' for non-beneficial criteria.\n\n    Returns:\n        list: Preference scores for each alternative.\n        list: Ranks of each\u00a0alternative.\n\n## Installation\n\nYou can install the *Topsis Package* using pip from PyPI.\n\n### From PyPI:\n\nRun the following command in your terminal or command prompt:\n\n```bash\npip install topsis-package  \n```\n\n## Installation  \nInstall the package using pip:  \n```bash\npip install 102217109_topsis\n```\n",
+        "description_content_type": "text/markdown",
+        "docs_url": null,
+        "download_url": null,
+        "downloads": {
+            "last_day": -1,
+            "last_month": -1,
+            "last_week": -1
+        },
+        "dynamic": null,
+        "home_page": "https://github.com/yourusername/topsis_package",
+        "keywords": null,
+        "license": null,
+        "license_expression": null,
+        "license_files": null,
+        "maintainer": null,
+        "maintainer_email": null,
+        "name": "102217109-topsis",
+        "package_url": "https://pypi.org/project/102217109-topsis/",
+        "platform": null,
+        "project_url": "https://pypi.org/project/102217109-topsis/",
+        "project_urls": {
+            "Homepage": "https://github.com/yourusername/topsis_package"
+        },
+        "provides_extra": null,
+        "release_url": "https://pypi.org/project/102217109-topsis/1.0.0/",
+        "requires_dist": [
+            "numpy"
+        ],
+        "requires_python": ">=3.6",
+        "summary": "A simple TOPSIS implementation package.",
+        "version": "1.0.0",
+        "yanked": false,
+        "yanked_reason": null
+    },
+    "last_serial": 27017808,
+    "ownership": {
+        "organization": null,
+        "roles": [
+            {
+                "role": "Owner",
+                "user": "PrishaSingh"
+            }
+        ]
+    },
+    "urls": [
+        {
+            "comment_text": "",
+            "digests": {
+                "blake2b_256": "ab339f4b026d8e064c28bc084cc24cdc2e5f7ff78e720418bccc1ab55d8e2057",
+                "md5": "488c4a6d048bbb96cd06a64b136f6627",
+                "sha256": "e9836171d4d71a7f7a4aa3c8e2567d8c3a8c259a9831e403d8eb510442ead91e"
+            },
+            "downloads": -1,
+            "filename": "102217109_topsis-1.0.0-py3-none-any.whl",
+            "has_sig": false,
+            "md5_digest": "488c4a6d048bbb96cd06a64b136f6627",
+            "packagetype": "bdist_wheel",
+            "python_version": "py3",
+            "requires_python": ">=3.6",
+            "size": 2457,
+            "upload_time": "2025-01-18T20:54:39",
+            "upload_time_iso_8601": "2025-01-18T20:54:39.939601Z",
+            "url": "https://files.pythonhosted.org/packages/ab/33/9f4b026d8e064c28bc084cc24cdc2e5f7ff78e720418bccc1ab55d8e2057/102217109_topsis-1.0.0-py3-none-any.whl",
+            "yanked": false,
+            "yanked_reason": null
+        },
+        {
+            "comment_text": "",
+            "digests": {
+                "blake2b_256": "261bb8660b585d3776aeda5cf73df7785bbfe23b3ce5c6ae2e5c537aa8c98505",
+                "md5": "c6297e658a666a283d2501a416109b8d",
+                "sha256": "c8018cccdda10baa4f98fff16834440e42046dbd45e90fe38c52b2567854abcb"
+            },
+            "downloads": -1,
+            "filename": "102217109_topsis-1.0.0.tar.gz",
+            "has_sig": false,
+            "md5_digest": "c6297e658a666a283d2501a416109b8d",
+            "packagetype": "sdist",
+            "python_version": "source",
+            "requires_python": ">=3.6",
+            "size": 2163,
+            "upload_time": "2025-01-18T20:54:41",
+            "upload_time_iso_8601": "2025-01-18T20:54:41.709629Z",
+            "url": "https://files.pythonhosted.org/packages/26/1b/b8660b585d3776aeda5cf73df7785bbfe23b3ce5c6ae2e5c537aa8c98505/102217109_topsis-1.0.0.tar.gz",
+            "yanked": false,
+            "yanked_reason": null
+        }
+    ],
+    "vulnerabilities": []
+}
