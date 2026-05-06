@@ -1,0 +1,97 @@
+{
+    "info": {
+        "author": "Muhamad Azmy",
+        "author_email": "muhamada@greenitglobe.com",
+        "bugtrack_url": null,
+        "classifiers": [],
+        "description": "# Zero-OS Python Client\n## Install\n\n```bash\npip3 install 0-core-client\n```\n\n## How to use\n\n```python\nfrom zeroos.core0.client import Client\n\ncl = Client(host='<0-core-host-address>', password='<JWT>')\n\n#validate that core0 is reachable\nprint(cl.ping())\n\n#then u can do stuff like\nprint(\n    cl.system('ps -eF').get()\n)\n\nprint(\n    cl.system('ip a').get()\n)\n\n#client exposes more tools for disk, bridges, and container mgmt\nprint(\n    cl.disk.list()\n)\n```\n\n\n",
+        "description_content_type": null,
+        "docs_url": null,
+        "download_url": "",
+        "downloads": {
+            "last_day": -1,
+            "last_month": -1,
+            "last_week": -1
+        },
+        "dynamic": null,
+        "home_page": "https://github.com/zero-os/0-core",
+        "keywords": "",
+        "license": "Apache 2.0",
+        "license_expression": null,
+        "license_files": null,
+        "maintainer": "",
+        "maintainer_email": "",
+        "name": "0-core-client",
+        "package_url": "https://pypi.org/project/0-core-client/",
+        "platform": "",
+        "project_url": "https://pypi.org/project/0-core-client/",
+        "project_urls": {
+            "Homepage": "https://github.com/zero-os/0-core"
+        },
+        "provides_extra": null,
+        "release_url": "https://pypi.org/project/0-core-client/1.1.0a8/",
+        "requires_dist": [
+            "redis (>=2.10.5)"
+        ],
+        "requires_python": "",
+        "summary": "Zero-OS 0-core client",
+        "version": "1.1.0a8",
+        "yanked": false,
+        "yanked_reason": null
+    },
+    "last_serial": 3242044,
+    "ownership": {
+        "organization": null,
+        "roles": [
+            {
+                "role": "Owner",
+                "user": "zaibon"
+            }
+        ]
+    },
+    "urls": [
+        {
+            "comment_text": "",
+            "digests": {
+                "blake2b_256": "66faacc0e598ef7bc9af8dc67b76776fff86e163b702742c3a842d1ae7956203",
+                "md5": "c408c34711834a9d7d9d0c7590e3dfd1",
+                "sha256": "3a5566dcb6d8c971c4ec74b3910b1d5b25b5e18ce6263161a1b7f9d41f3188e4"
+            },
+            "downloads": -1,
+            "filename": "0_core_client-1.1.0a8-py3-none-any.whl",
+            "has_sig": false,
+            "md5_digest": "c408c34711834a9d7d9d0c7590e3dfd1",
+            "packagetype": "bdist_wheel",
+            "python_version": "py3",
+            "requires_python": null,
+            "size": 21332,
+            "upload_time": "2017-10-11T13:19:47",
+            "upload_time_iso_8601": "2017-10-11T13:19:47.668447Z",
+            "url": "https://files.pythonhosted.org/packages/66/fa/acc0e598ef7bc9af8dc67b76776fff86e163b702742c3a842d1ae7956203/0_core_client-1.1.0a8-py3-none-any.whl",
+            "yanked": false,
+            "yanked_reason": null
+        },
+        {
+            "comment_text": "",
+            "digests": {
+                "blake2b_256": "cd1c52c3a1c88b2a2821ea7d2afc3c7883a8d73880dd4de4199b8d5e7d9773bd",
+                "md5": "7707c35dbb5ae99925daa925dbb04696",
+                "sha256": "663508e24643ad3a261b8b317e34ad6f096d2bae8997fb9155629e941b78986b"
+            },
+            "downloads": -1,
+            "filename": "0-core-client-1.1.0a8.tar.gz",
+            "has_sig": false,
+            "md5_digest": "7707c35dbb5ae99925daa925dbb04696",
+            "packagetype": "sdist",
+            "python_version": "source",
+            "requires_python": null,
+            "size": 19683,
+            "upload_time": "2017-10-11T13:19:49",
+            "upload_time_iso_8601": "2017-10-11T13:19:49.816030Z",
+            "url": "https://files.pythonhosted.org/packages/cd/1c/52c3a1c88b2a2821ea7d2afc3c7883a8d73880dd4de4199b8d5e7d9773bd/0-core-client-1.1.0a8.tar.gz",
+            "yanked": false,
+            "yanked_reason": null
+        }
+    ],
+    "vulnerabilities": []
+}

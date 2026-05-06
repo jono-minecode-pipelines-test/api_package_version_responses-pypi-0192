@@ -1,0 +1,97 @@
+{
+    "info": {
+        "author": "Muhamad Azmy",
+        "author_email": "muhamada@greenitglobe.com",
+        "bugtrack_url": null,
+        "classifiers": [],
+        "description": "# Zero-OS Python Client\n## Install\n\n```bash\npip install 0-core-client\n```\n\n## How to use\n\n```python\nfrom zeroos.core0 import client\n\ncl = client.Client(host='0-core-host-address')\n\n#validate that core0 is reachable\nprint(cl.ping())\n\n#then u can do stuff like\nprint(\n    cl.system('ps -eF').get()\n)\n\nprint(\n    cl.system('ip a').get()\n)\n\n#client exposes more tools for disk, bridges, and container mgmt\nprint(\n    cl.disk.list()\n)\n```\n\n\n",
+        "description_content_type": null,
+        "docs_url": null,
+        "download_url": "",
+        "downloads": {
+            "last_day": -1,
+            "last_month": -1,
+            "last_week": -1
+        },
+        "dynamic": null,
+        "home_page": "https://github.com/zero-os/0-core",
+        "keywords": "",
+        "license": "Apache 2.0",
+        "license_expression": null,
+        "license_files": null,
+        "maintainer": "",
+        "maintainer_email": "",
+        "name": "0-core-client",
+        "package_url": "https://pypi.org/project/0-core-client/",
+        "platform": "",
+        "project_url": "https://pypi.org/project/0-core-client/",
+        "project_urls": {
+            "Homepage": "https://github.com/zero-os/0-core"
+        },
+        "provides_extra": null,
+        "release_url": "https://pypi.org/project/0-core-client/1.1.0a7/",
+        "requires_dist": [
+            "redis (>=2.10.5)"
+        ],
+        "requires_python": "",
+        "summary": "Zero-OS 0-core client",
+        "version": "1.1.0a7",
+        "yanked": false,
+        "yanked_reason": null
+    },
+    "last_serial": 3242044,
+    "ownership": {
+        "organization": null,
+        "roles": [
+            {
+                "role": "Owner",
+                "user": "zaibon"
+            }
+        ]
+    },
+    "urls": [
+        {
+            "comment_text": "",
+            "digests": {
+                "blake2b_256": "253ed455e956af418f0632326604d19253b6d0558809ed582afffaed72200b0a",
+                "md5": "4ac068d7eadbca72b04e60d543adce6c",
+                "sha256": "c81dfe9de503d0dc9770bf27f6177d8bf31626830b290ed5afbc0b3579f8fd2e"
+            },
+            "downloads": -1,
+            "filename": "0_core_client-1.1.0a7-py3-none-any.whl",
+            "has_sig": false,
+            "md5_digest": "4ac068d7eadbca72b04e60d543adce6c",
+            "packagetype": "bdist_wheel",
+            "python_version": "py3",
+            "requires_python": null,
+            "size": 20616,
+            "upload_time": "2017-08-08T18:10:29",
+            "upload_time_iso_8601": "2017-08-08T18:10:29.474033Z",
+            "url": "https://files.pythonhosted.org/packages/25/3e/d455e956af418f0632326604d19253b6d0558809ed582afffaed72200b0a/0_core_client-1.1.0a7-py3-none-any.whl",
+            "yanked": false,
+            "yanked_reason": null
+        },
+        {
+            "comment_text": "",
+            "digests": {
+                "blake2b_256": "f590897a16f3cd9044fe18a238ecaa9c421f8b54531bd7ef34e7ec405c5a319a",
+                "md5": "35ebd261248d500b346674f98d9244f4",
+                "sha256": "2f45465e53f57b6f7570aa959d27f6ab5ea32ee395e210df8de23f1335b3bcc8"
+            },
+            "downloads": -1,
+            "filename": "0-core-client-1.1.0a7.tar.gz",
+            "has_sig": false,
+            "md5_digest": "35ebd261248d500b346674f98d9244f4",
+            "packagetype": "sdist",
+            "python_version": "source",
+            "requires_python": null,
+            "size": 18934,
+            "upload_time": "2017-08-08T18:10:31",
+            "upload_time_iso_8601": "2017-08-08T18:10:31.426796Z",
+            "url": "https://files.pythonhosted.org/packages/f5/90/897a16f3cd9044fe18a238ecaa9c421f8b54531bd7ef34e7ec405c5a319a/0-core-client-1.1.0a7.tar.gz",
+            "yanked": false,
+            "yanked_reason": null
+        }
+    ],
+    "vulnerabilities": []
+}

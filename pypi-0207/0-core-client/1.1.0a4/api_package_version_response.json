@@ -1,0 +1,74 @@
+{
+    "info": {
+        "author": "Muhamad Azmy",
+        "author_email": "muhamada@greenitglobe.com",
+        "bugtrack_url": null,
+        "classifiers": [],
+        "description": "# Zero-OS Python Client\n## Install\n\n```bash\npip install 0-core-client\n```\n\n## How to use\n\n```python\nfrom zeroos.core0 import client\n\ncl = client.Client(host='0-core-host-address')\n\n#validate that core0 is reachable\nprint(cl.ping())\n\n#then u can do stuff like\nprint(\n    cl.system('ps -eF').get()\n)\n\nprint(\n    cl.system('ip a').get()\n)\n\n#client exposes more tools for disk, bridges, and container mgmt\nprint(\n    cl.disk.list()\n)\n```",
+        "description_content_type": null,
+        "docs_url": null,
+        "download_url": "",
+        "downloads": {
+            "last_day": -1,
+            "last_month": -1,
+            "last_week": -1
+        },
+        "dynamic": null,
+        "home_page": "https://github.com/zero-os/0-core",
+        "keywords": "",
+        "license": "Apache 2.0",
+        "license_expression": null,
+        "license_files": null,
+        "maintainer": "",
+        "maintainer_email": "",
+        "name": "0-core-client",
+        "package_url": "https://pypi.org/project/0-core-client/",
+        "platform": "",
+        "project_url": "https://pypi.org/project/0-core-client/",
+        "project_urls": {
+            "Homepage": "https://github.com/zero-os/0-core"
+        },
+        "provides_extra": null,
+        "release_url": "https://pypi.org/project/0-core-client/1.1.0a4/",
+        "requires_dist": null,
+        "requires_python": "",
+        "summary": "Zero-OS 0-core client",
+        "version": "1.1.0a4",
+        "yanked": false,
+        "yanked_reason": null
+    },
+    "last_serial": 3242044,
+    "ownership": {
+        "organization": null,
+        "roles": [
+            {
+                "role": "Owner",
+                "user": "zaibon"
+            }
+        ]
+    },
+    "urls": [
+        {
+            "comment_text": "",
+            "digests": {
+                "blake2b_256": "9b160160f8c9dfafb8d59e0b2eac3b0264660e8cef16e4f7dcd2da34f4073f2d",
+                "md5": "724309bb5af56368f696e0ecb403553d",
+                "sha256": "601b69c5c93d4990399ddacd79d1a81e9af3570a44a3a55bb7edff315b7c084d"
+            },
+            "downloads": -1,
+            "filename": "0-core-client-1.1.0a4.tar.gz",
+            "has_sig": false,
+            "md5_digest": "724309bb5af56368f696e0ecb403553d",
+            "packagetype": "sdist",
+            "python_version": "source",
+            "requires_python": null,
+            "size": 14655,
+            "upload_time": "2017-06-21T15:00:03",
+            "upload_time_iso_8601": "2017-06-21T15:00:03.092239Z",
+            "url": "https://files.pythonhosted.org/packages/9b/16/0160f8c9dfafb8d59e0b2eac3b0264660e8cef16e4f7dcd2da34f4073f2d/0-core-client-1.1.0a4.tar.gz",
+            "yanked": false,
+            "yanked_reason": null
+        }
+    ],
+    "vulnerabilities": []
+}
