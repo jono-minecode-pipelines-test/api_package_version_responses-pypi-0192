@@ -1,0 +1,133 @@
+{
+    "info": {
+        "author": "F. Eugene Aumson",
+        "author_email": "feuGeneA@users.noreply.github.com",
+        "bugtrack_url": null,
+        "classifiers": [
+            "Development Status :: 2 - Pre-Alpha",
+            "Intended Audience :: Developers",
+            "Intended Audience :: Financial and Insurance Industry",
+            "License :: OSI Approved :: Apache Software License",
+            "Natural Language :: English",
+            "Operating System :: OS Independent",
+            "Programming Language :: Python",
+            "Programming Language :: Python :: 3 :: Only",
+            "Programming Language :: Python :: 3.6",
+            "Programming Language :: Python :: 3.7",
+            "Topic :: Internet :: WWW/HTTP",
+            "Topic :: Office/Business :: Financial",
+            "Topic :: Other/Nonlisted Topic",
+            "Topic :: Security :: Cryptography",
+            "Topic :: Software Development :: Libraries",
+            "Topic :: Utilities"
+        ],
+        "description": "API documentation hosted at [https://0x.readthedocs.io/projects/order-utils/en/latest/](https://0x.readthedocs.io/projects/order-utils/en/latest/)\n\n## Development\n\n### Edit/test cycle\n`pip install -e .[dev]`\n\n`./setup.py build`\n\n`./setup.py build_sphinx`\n\n`./setup.py test`\n\n`./setup.py lint`\n\n`./setup.py clean --all`\n\nSee `./setup.py --help-commands` for more info.\n\n### Publishing\n`./setup.py sdist bdist_wheel` will build the distribution into the `dist` folder.  Once you're happy with it, you can use `./setup.py` to upload it to the package index, as described below.\n\nIf you're just experimenting, and want to try out a publish without committing to it, consider using a \"staging package;\" that is, rename the package, in `setup(name=...)` in `setup.py`, to something like \"0x-order-utils-staging\".  The reason is that PyPI will never let you re-publish to an already-used file name (which includes the package name and version), even if you delete that published version from the repo.  With an alternate package name, you can increase the version number (required for a successful upload) for every little experiment, without \"stealing\" version numbers from the main package name.\n\n#### Uploading to test.pypi.org\nCreate an account at test.pypi.org (this is independent of any account at pypi.org).\n\nWith an `sdist` folder populated as described above, do `./setup.py test_publish`.\n\nTo run tests against the package deployed to test.pypi.org, run `tox -erun_tests_against_test_deployment`.  Modify `tox.ini` to change the package name if you need to run against a `-staging` package.\n\n#### Uploading to (the real) pypi.org\nCreate an account at pypi.org (this is independent of any account at test.pypi.org).\n\nWith an `sdist` folder populated as described above, do `./setup.py publish`.\n\nTo run tests against the package deployed to PyPI, run `tox -erun_tests_against_deployment`.  Modify `tox.ini` to change the package name if you need to run against a `-staging` package.\n\n#### Documentation\nDocumentation is hosted at readthedocs.io, and it will be automatically rebuilt upon change to the development branch.  If needed, you can sign up for an account there and get yourself added to the list of Maintainers for the projects [`0x`](https://readthedocs.org/projects/0x/), [`0x-order-utils`](https://readthedocs.org/projects/0x-order-utils/), etc.  You can view doc build logs, and manually trigger new builds, through the Project interface on readthedocs.io.\n\nTo have readthedocs.io build documentation from a branch, you should use a throwaway/staging Project on (eg [`0x-order-utils-staging`](https://readthedocs.org/projects/0x-order-utils-staging/), in order to avoid pushing unstable documentation onto the main project page.  (If creating a new Project, be sure to copy all of the settings from the production Project's Admin, Advanced Settings menu.  At the time of this writing, the only important one to copy is the Python configuration file.)  In the Admin, Advanced Settings for the staging Project, set the Default Branch appropriately.\n\n\n",
+        "description_content_type": "text/markdown",
+        "docs_url": null,
+        "download_url": "",
+        "downloads": {
+            "last_day": -1,
+            "last_month": -1,
+            "last_week": -1
+        },
+        "dynamic": null,
+        "home_page": "https://github.com/0xproject/0x-monorepo/python-packages/order_utils",
+        "keywords": "ethereum cryptocurrency 0x decentralized blockchain dex exchange",
+        "license": "Apache 2.0",
+        "license_expression": null,
+        "license_files": null,
+        "maintainer": "",
+        "maintainer_email": "",
+        "name": "0x-order-utils",
+        "package_url": "https://pypi.org/project/0x-order-utils/",
+        "platform": "",
+        "project_url": "https://pypi.org/project/0x-order-utils/",
+        "project_urls": {
+            "Homepage": "https://github.com/0xproject/0x-monorepo/python-packages/order_utils"
+        },
+        "provides_extra": null,
+        "release_url": "https://pypi.org/project/0x-order-utils/0.1.0/",
+        "requires_dist": [
+            "eth-abi",
+            "mypy-extensions",
+            "web3",
+            "bandit; extra == 'dev'",
+            "black; extra == 'dev'",
+            "coverage; extra == 'dev'",
+            "coveralls; extra == 'dev'",
+            "mypy; extra == 'dev'",
+            "mypy-extensions; extra == 'dev'",
+            "pycodestyle; extra == 'dev'",
+            "pydocstyle; extra == 'dev'",
+            "pylint; extra == 'dev'",
+            "pytest; extra == 'dev'",
+            "sphinx; extra == 'dev'",
+            "tox; extra == 'dev'",
+            "twine; extra == 'dev'"
+        ],
+        "requires_python": ">=3.6, <4",
+        "summary": "Order utilities for 0x applications",
+        "version": "0.1.0",
+        "yanked": false,
+        "yanked_reason": null
+    },
+    "last_serial": 10142355,
+    "ownership": {
+        "organization": null,
+        "roles": [
+            {
+                "role": "Owner",
+                "user": "PirosB3"
+            },
+            {
+                "role": "Owner",
+                "user": "feuGeneA"
+            }
+        ]
+    },
+    "urls": [
+        {
+            "comment_text": "",
+            "digests": {
+                "blake2b_256": "7bf66e3f8e10097d1302abc5d8cc3dbc7474812001e01e55403c709c7e6ab27e",
+                "md5": "8bddc66c7f8e48095e51ddf49e65c2c6",
+                "sha256": "99067a4bf3e2cbf53848a4d70c5329e95c72e067c26fae11e953db8e7c1281a4"
+            },
+            "downloads": -1,
+            "filename": "0x_order_utils-0.1.0-py3-none-any.whl",
+            "has_sig": false,
+            "md5_digest": "8bddc66c7f8e48095e51ddf49e65c2c6",
+            "packagetype": "bdist_wheel",
+            "python_version": "py3",
+            "requires_python": ">=3.6, <4",
+            "size": 7705,
+            "upload_time": "2018-10-25T16:52:01",
+            "upload_time_iso_8601": "2018-10-25T16:52:01.637916Z",
+            "url": "https://files.pythonhosted.org/packages/7b/f6/6e3f8e10097d1302abc5d8cc3dbc7474812001e01e55403c709c7e6ab27e/0x_order_utils-0.1.0-py3-none-any.whl",
+            "yanked": false,
+            "yanked_reason": null
+        },
+        {
+            "comment_text": "",
+            "digests": {
+                "blake2b_256": "5073c1386311f201a8dcac72af7afe810cff2d165a91d7b531d47bfe17aee81e",
+                "md5": "53a5929485be750ad6858dce658d711f",
+                "sha256": "4fb798f95d0c0b7bc96830a05b97d2fecad15e1ab6a7fdf276ab3f9c08f8ecdb"
+            },
+            "downloads": -1,
+            "filename": "0x-order-utils-0.1.0.tar.gz",
+            "has_sig": false,
+            "md5_digest": "53a5929485be750ad6858dce658d711f",
+            "packagetype": "sdist",
+            "python_version": "source",
+            "requires_python": ">=3.6, <4",
+            "size": 7173,
+            "upload_time": "2018-10-25T16:52:03",
+            "upload_time_iso_8601": "2018-10-25T16:52:03.026157Z",
+            "url": "https://files.pythonhosted.org/packages/50/73/c1386311f201a8dcac72af7afe810cff2d165a91d7b531d47bfe17aee81e/0x-order-utils-0.1.0.tar.gz",
+            "yanked": false,
+            "yanked_reason": null
+        }
+    ],
+    "vulnerabilities": []
+}

@@ -1,0 +1,140 @@
+{
+    "info": {
+        "author": "F. Eugene Aumson",
+        "author_email": "feuGeneA@users.noreply.github.com",
+        "bugtrack_url": null,
+        "classifiers": [
+            "Development Status :: 2 - Pre-Alpha",
+            "Intended Audience :: Developers",
+            "Intended Audience :: Financial and Insurance Industry",
+            "License :: OSI Approved :: Apache Software License",
+            "Natural Language :: English",
+            "Operating System :: OS Independent",
+            "Programming Language :: Python",
+            "Programming Language :: Python :: 3 :: Only",
+            "Programming Language :: Python :: 3.6",
+            "Programming Language :: Python :: 3.7",
+            "Topic :: Internet :: WWW/HTTP",
+            "Topic :: Office/Business :: Financial",
+            "Topic :: Other/Nonlisted Topic",
+            "Topic :: Security :: Cryptography",
+            "Topic :: Software Development :: Libraries",
+            "Topic :: Utilities"
+        ],
+        "description": "## 0x-order-utils\n\n0x order-related utilities for those developing on top of 0x protocol.\n\nRead the [documentation](http://0x-order-utils-py.s3-website-us-east-1.amazonaws.com/)\n\n## Installing\n\n```bash\npip install 0x-order-utils\n```\n\n## Contributing\n\nWe welcome improvements and fixes from the wider community! To report bugs within this package, please create an issue in this repository.\n\nPlease read our [contribution guidelines](../../CONTRIBUTING.md) before getting started.\n\n### Install Code and Dependencies\n\nEnsure that you have installed Python >=3.6 and Docker. Then:\n\n```bash\npip install -e .[dev]\n```\n\n### Test\n\nTests depend on a running ganache instance with the 0x contracts deployed in it. For convenience, a docker container is provided that has ganache-cli and a snapshot containing the necessary contracts. A shortcut is provided to run that docker container: `./setup.py ganache`. With that running, the tests can be run with `./setup.py test`.\n\n### Clean\n\n`./setup.py clean --all`\n\n### Lint\n\n`./setup.py lint`\n\n### Build Documentation\n\n`./setup.py build_sphinx`\n\n### More\n\nSee `./setup.py --help-commands` for more info.\n\n\n",
+        "description_content_type": "text/markdown",
+        "docs_url": null,
+        "download_url": "",
+        "downloads": {
+            "last_day": -1,
+            "last_month": -1,
+            "last_week": -1
+        },
+        "dynamic": null,
+        "home_page": "https://github.com/0xProject/0x-monorepo/tree/development/python-packages/order_utils",
+        "keywords": "ethereum cryptocurrency 0x decentralized blockchain dex exchange",
+        "license": "Apache 2.0",
+        "license_expression": null,
+        "license_files": null,
+        "maintainer": "",
+        "maintainer_email": "",
+        "name": "0x-order-utils",
+        "package_url": "https://pypi.org/project/0x-order-utils/",
+        "platform": "",
+        "project_url": "https://pypi.org/project/0x-order-utils/",
+        "project_urls": {
+            "Homepage": "https://github.com/0xProject/0x-monorepo/tree/development/python-packages/order_utils"
+        },
+        "provides_extra": null,
+        "release_url": "https://pypi.org/project/0x-order-utils/4.0.1/",
+        "requires_dist": [
+            "0x-contract-addresses",
+            "0x-contract-artifacts",
+            "0x-json-schemas",
+            "deprecated",
+            "web3",
+            "eth-abi",
+            "eth-typing",
+            "eth-utils",
+            "mypy-extensions",
+            "0x-contract-wrappers ; extra == 'dev'",
+            "bandit ; extra == 'dev'",
+            "black ; extra == 'dev'",
+            "coverage ; extra == 'dev'",
+            "coveralls ; extra == 'dev'",
+            "mypy (<=0.770) ; extra == 'dev'",
+            "mypy-extensions ; extra == 'dev'",
+            "pycodestyle ; extra == 'dev'",
+            "pydocstyle ; extra == 'dev'",
+            "pylint ; extra == 'dev'",
+            "pytest ; extra == 'dev'",
+            "sphinx ; extra == 'dev'",
+            "tox ; extra == 'dev'",
+            "twine ; extra == 'dev'"
+        ],
+        "requires_python": ">=3.6, <4",
+        "summary": "Order utilities for 0x applications",
+        "version": "4.0.1",
+        "yanked": false,
+        "yanked_reason": null
+    },
+    "last_serial": 10142355,
+    "ownership": {
+        "organization": null,
+        "roles": [
+            {
+                "role": "Owner",
+                "user": "PirosB3"
+            },
+            {
+                "role": "Owner",
+                "user": "feuGeneA"
+            }
+        ]
+    },
+    "urls": [
+        {
+            "comment_text": "",
+            "digests": {
+                "blake2b_256": "f9b8d26859b81cffe34ecb3b8f7d816fbc6b48995e2a9dce0b2baf3bee2f7b2c",
+                "md5": "0d0e8907ce5828448ac0894fc05810d2",
+                "sha256": "569ca6a1fab8d8b1e850a3badab7e7b658577765bb761fdbd210374310dc6a76"
+            },
+            "downloads": -1,
+            "filename": "0x_order_utils-4.0.1-py3-none-any.whl",
+            "has_sig": false,
+            "md5_digest": "0d0e8907ce5828448ac0894fc05810d2",
+            "packagetype": "bdist_wheel",
+            "python_version": "py3",
+            "requires_python": ">=3.6, <4",
+            "size": 12138,
+            "upload_time": "2021-04-22T20:15:37",
+            "upload_time_iso_8601": "2021-04-22T20:15:37.257942Z",
+            "url": "https://files.pythonhosted.org/packages/f9/b8/d26859b81cffe34ecb3b8f7d816fbc6b48995e2a9dce0b2baf3bee2f7b2c/0x_order_utils-4.0.1-py3-none-any.whl",
+            "yanked": false,
+            "yanked_reason": null
+        },
+        {
+            "comment_text": "",
+            "digests": {
+                "blake2b_256": "04d2b0685ab1d150f25d6ee72c466783bf7d5416680cb09d37d3ba5757272f26",
+                "md5": "a13b42c32382972bb901c105711476e2",
+                "sha256": "c156bc959ce7a3398b3a5ad365bae6fb012e13f91b5eb07caa6e9d92f4265a0b"
+            },
+            "downloads": -1,
+            "filename": "0x-order-utils-4.0.1.tar.gz",
+            "has_sig": false,
+            "md5_digest": "a13b42c32382972bb901c105711476e2",
+            "packagetype": "sdist",
+            "python_version": "source",
+            "requires_python": ">=3.6, <4",
+            "size": 13405,
+            "upload_time": "2021-04-22T20:15:38",
+            "upload_time_iso_8601": "2021-04-22T20:15:38.653133Z",
+            "url": "https://files.pythonhosted.org/packages/04/d2/b0685ab1d150f25d6ee72c466783bf7d5416680cb09d37d3ba5757272f26/0x-order-utils-4.0.1.tar.gz",
+            "yanked": false,
+            "yanked_reason": null
+        }
+    ],
+    "vulnerabilities": []
+}
